@@ -8,7 +8,7 @@ navbar = dbc.NavbarSimple(
         dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("More pages", header=True),
-                dbc.DropdownMenuItem("movement1", href="/movement1"),
+                dbc.DropdownMenuItem("movement1", href="/movement1", external_link=True,),
                 dbc.DropdownMenuItem("movement2", href="#"),
             ],
             nav=True,
@@ -28,6 +28,11 @@ app.layout = html.Div([
 		dash.page_container,
 		navbar,
 ])
+
+#for page in dash.page_registry.values():
+#	print('path: ' + page["path"])
+#	print(dcc.Link(children=page['name'], href=page['path']))
+
 
 if __name__ == '__main__':
 	app.run_server(debug=True, use_reloader=False) # Turn off reloader if inside Jupyter

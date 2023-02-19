@@ -2,7 +2,7 @@ import dash
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 
-dash.register_page(__name__, path='/', top_nav=True,)
+dash.register_page(__name__, path='/')
 
 def generate_card(movement, caption, image_link, link):
         card = dbc.Card(

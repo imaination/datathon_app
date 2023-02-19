@@ -1,7 +1,7 @@
 import dash
 import dash_bootstrap_components as dbc
 
-dash.register_page(__name__, name="movement1", top_nav=True,)
+dash.register_page(__name__, name="movement1")
 
 
 def layout():
