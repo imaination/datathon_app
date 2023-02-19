@@ -4,11 +4,11 @@ from dash import html, dcc
 
 navbar = dbc.NavbarSimple(
     children=[
-        dbc.NavItem(dbc.NavLink("Home", href="https://dozen-membership-possible-qggq.onrender.com")),
+        dbc.NavItem(dbc.NavLink("Home", href="/")),
         dbc.DropdownMenu(
             children=[
                 dbc.DropdownMenuItem("More pages", header=True),
-                dbc.DropdownMenuItem("movement1", href="https://dozen-membership-possible-qggq.onrender.com/movement1"),
+                dbc.DropdownMenuItem("movement1", href="/movement1"),
                 dbc.DropdownMenuItem("movement2", href="#"),
             ],
             nav=True,
@@ -27,7 +27,6 @@ server = app.server
 app.layout = html.Div([
 		dash.page_container,
 		navbar,
-		
 ])
 
 if __name__ == '__main__':
