@@ -22,7 +22,7 @@ navbar = dbc.NavbarSimple(
     fixed="top",
 )
 
-
+server = app.server
 app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.CYBORG])
 app.layout = html.Div([
 		dash.page_container,
