@@ -12,6 +12,6 @@ def layout():
 			{"key": "3", "src": "https://kuleuven-datathon-2023.s3.eu-central-1.amazonaws.com/images/Vincent+Van+Gogh/A+Marsh.jpg", "header": "HEADER HERE", "caption": "caption here, maybe generate images to text",},
 		],
 		className="carousel-fade",
-		style={"width": "80%", "height": "50%", "padding-top": "70px", "margin-left": "auto", "margin-right": "auto"}
+		style={"width": "80%", "height": "70%", "padding-top": "70px", "margin-left": "auto", "margin-right": "auto"}
 	)
 	return carousel
