@@ -16,7 +16,7 @@ def items(start, end):
             "key": str(idx),
             "src": rows['url'],
             "header": rows['header'],
-            "caption": rows['caption'],
+            "caption": rows['captions'],
         }
 
         items.append(movement_dict)
