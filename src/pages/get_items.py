@@ -2,14 +2,14 @@ import pandas as pd
 import os
 
 
-def items(start, end):
+def items(movement):
     PATH = os.path.dirname(os.getcwd())
     DATA_PATH = os.path.join(PATH, 'src/assets')
     gifs = 'gifs.csv'
     print(os.path.join(DATA_PATH, gifs))
     df = pd.read_csv(os.path.join(DATA_PATH, gifs))
     
-    df = df.iloc[start:end]
+    df = df.loc[df['movement']==movement] 
     items = []
     for idx, rows in df.iterrows():
         movement_dict = {
@@ -21,4 +21,3 @@ def items(start, end):
 
         items.append(movement_dict)
     return items
-
